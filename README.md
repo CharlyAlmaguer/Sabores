@@ -10,7 +10,7 @@ reposteria y dulces
 
 3.-Eleccion de dispositivo, version del sistema operativo y orientaciones soportadas
 a) SmartPhone, se escogio este tipo de dispositivo ya que es el mas comun y por lo tanto tenemos mayor cobertura de mercado
-b) Android 6.0 o API 23, al igual que el punto antorior se escogio este sistema opertaivo minimo ya que el porcentaje de dispositivos en el mercado 
+b) Android 6.0 o API 23, al igual que el punto anterior se escogio este sistema operativo minimo ya que el porcentaje de dispositivos en el mercado 
 es del 98% lo cual nos da una cobertura grande para tratar de llegar al mayor numero de clientes posibles.
 c) Orientacion Portrait o Vertical, el cliente nos pidio especificamente asi el diseño, ademas al tratarse de un SmartPhone y principalmente realizar
 la funcion de un catalogo la opcion mas optima es Portrait.
