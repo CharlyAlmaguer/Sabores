@@ -5,7 +5,7 @@ Proyecto Final
 Venta de productos de reposteria de la marca Dulces Sabores
 
 2.-Descripcion del Logo:
-El logo es propio de la empresa y lo que se busca es darle una apariecnia y sensacion de acuerdo con el giro del negocio que este caso es venta de 
+El logo es propio de la empresa y lo que se busca es darle una apariencia y sensacion de acuerdo con el giro del negocio que en este caso es venta de 
 reposteria y dulces
 
 3.-Eleccion de dispositivo, version del sistema operativo y orientaciones soportadas
