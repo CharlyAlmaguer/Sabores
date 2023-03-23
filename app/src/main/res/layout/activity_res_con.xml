@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_main"
+    tools:context="com.car.sabores.activities.ResConActivity">
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Reestablecer contraseña"
+        android:fontFamily="@font/roboto_reg"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tvL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:text="________________________________"/>
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvL1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_reg"
+        android:text="Por favor ingrese su correo para recibir el enlace para reestablecer su contraseña. "/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:hint="Ejm: dulcessabores@yahoo.com"
+        android:textColorHint="@color/gris"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/roboto_reg"
+        android:layout_below="@id/tvTexto"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Enviar"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/base"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/roboto_reg"
+        android:layout_below="@id/etCorreo"/>
+
+</RelativeLayout>

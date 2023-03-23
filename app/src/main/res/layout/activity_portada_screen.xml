@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_0"
+    tools:context="com.car.sabores.activities.PortadaScreen">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/logo_1"
+        app:riv_corner_radius="10dp"
+        android:fitsSystemWindows="true"
+        />
+
+    <TextView
+        android:id="@+id/tvLinea0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="__________________"/>
+
+    <TextView
+        android:id="@+id/tvLeyenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tvLinea0"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/alex_brush"
+        android:text="La comida va al estomago, pero el postre al corazón."
+        />
+
+    <TextView
+        android:id="@+id/tvLinea1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLinea0"
+        android:layout_marginTop="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="__________________"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btComenzar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvLinea1"
+        android:textSize="16sp"
+        android:text="Comenzar >"
+        android:fontFamily="@font/roboto_reg"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:cornerRadius="5dp"/>
+
+</RelativeLayout>

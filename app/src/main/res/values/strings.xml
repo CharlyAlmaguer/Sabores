@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sabores</string>
+    <string name="req_constraseña">*La contraseña debe de tener minimo 6 caracteres y debe contener al menos una letra y al menos un numero</string>
+    <string name="res_contraseña">¿Olvidó su contraseña? Restablecer aquí</string>
+</resources>

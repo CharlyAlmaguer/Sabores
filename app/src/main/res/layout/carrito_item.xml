@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:padding="0dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivCarrito"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/logo_2"
+                app:riv_corner_radius="5dp" />
+
+            <TextView
+                android:id="@+id/tvTituloCarrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivCarrito"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Titulo"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_reg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvCantidadCarrrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Cantidad"
+                android:textColor="@color/gris"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_reg"
+                android:layout_toEndOf="@id/ivCarrito"
+                android:layout_below="@id/tvPrecioCarrrito"/>
+
+            <TextView
+                android:id="@+id/tvPrecioCarrrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Precio"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_reg"
+                android:textColor="@color/green"
+                android:layout_toEndOf="@id/ivCarrito"
+                android:layout_below="@id/tvTituloCarrito"/>
+
+            <ImageView
+                android:id="@+id/btnEliminar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_trash"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

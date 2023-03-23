@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_main"
+    tools:context="com.car.sabores.activities.CarritoActivity">
+
+    <ImageView
+        android:id="@+id/ivIconCar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_car"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Carrito de Compras"
+        android:textSize="23sp"
+        android:fontFamily="@font/roboto_reg"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/ivIconCar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ivIconCar"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Total: "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="@font/roboto_reg"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

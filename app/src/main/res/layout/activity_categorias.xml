@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_main"
+    tools:context="com.car.sabores.activities.CategoriasActivity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivIconTool"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_2"
+        app:riv_corner_radius="30dp"/>
+
+    <!--<ImageView
+        android:id="@+id/ivIconMenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_menu"/>-->
+
+    <ImageView
+        android:id="@+id/ivIconCarrito"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_car"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoriesCard1"
+        app:cardCornerRadius="15dp"
+        android:padding="0dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/ivIconTool">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivChocolate"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chocolate"
+                android:layout_width="65dp"
+                android:layout_height="95dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle1"
+                android:layout_toEndOf="@+id/ivChocolate"
+                android:text="Chocolates"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoriesCard2"
+        app:cardCornerRadius="15dp"
+        android:padding="0dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/ivIconTool">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivPalomitas"
+                android:layout_centerVertical="true"
+                android:src="@drawable/palomitas"
+                android:layout_width="65dp"
+                android:layout_height="95dp"
+                app:riv_corner_radius="10dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle2"
+                android:layout_toEndOf="@+id/ivPalomitas"
+                android:text="Palomitas"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoriesCard3"
+        app:cardCornerRadius="15dp"
+        android:padding="0dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/categoriesCard1">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivManzana"
+                android:layout_centerVertical="true"
+                android:src="@drawable/manzana"
+                android:layout_width="65dp"
+                android:layout_height="95dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle3"
+                android:layout_toEndOf="@+id/ivManzana"
+                android:text="Manzanas"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoriesCard4"
+        app:cardCornerRadius="15dp"
+        android:padding="0dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/categoriesCard2">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivPastelillos"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pastelillos"
+                android:layout_width="65dp"
+                android:layout_height="95dp"
+                app:riv_corner_radius="10dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle4"
+                android:layout_toEndOf="@+id/ivPastelillos"
+                android:text="Pastelillos"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoriesCard5"
+        app:cardCornerRadius="15dp"
+        android:padding="0dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/categoriesCard3">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivOtros"
+                android:layout_centerVertical="true"
+                android:src="@drawable/otros"
+                android:layout_width="65dp"
+                android:layout_height="95dp"/>
+
+            <TextView
+                android:id="@+id/tvTitle5"
+                android:layout_toEndOf="@+id/ivOtros"
+                android:text="Otros"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
